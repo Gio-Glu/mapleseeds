@@ -36,26 +36,33 @@
         }
         curl_close($curl);
         echo '<br />------<br />';
-        $apiData = json_decode($result);
+        $apiData = json_decode($result, true);
         //var_dump($apiData);
-        print_r($apiData);
+        //print_r($apiData);
         // $accessToken = $apiData->access_token;
         // echo $accessToken;
     ?>
-    <div class="container py-5">
-        <div class="row">
-            <?php foreach($apiData->data->cover->media->thumbnails as $product): ?>
-                <div class="col-12 col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                        <h2><?php echo $product->width ?></h2>
-                        </div>
-                        <img src="<?php echo $product->url ?>" alt="<?php echo $product->mediaId ?>">
-                    </div>
-                </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
+
+    <?php foreach($apiData["data"]["cover"]["media"]["thumbnails"] as $product): ?>
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                    
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+                <div class="item"><img src="<?php echo $product["url"] ?>" alt="test"></div>
+            
+            </div>
+      <?php endforeach; ?>
 
     <script src="js/script.js"></script>
 </body>
