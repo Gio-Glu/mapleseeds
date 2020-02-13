@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head -->
+    <meta charset="utf-8" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How to use responsive options" />
+    <meta name="author" content="David Deutsch" />
+
+    <title>
+      Maple Seeds
+    </title>
+
+    <!-- Stylesheets -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../assets/css/docs.theme.min.css" />
+
+    <!-- Owl Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="../assets/ico/apple-touch-icon-144-precomposed.png"
+    />
+    <link rel="shortcut icon" href="../assets/ico/favicon.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- javascript -->
+    <script src="../assets/vendors/jquery.min.js"></script>
+    <script src="../assets/owlcarousel/owl.carousel.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="brand left">
+            <h3>
+              Maple Seeds
+            </h3>
+          </div>
+
+          <div class="nav-bar">
+            <ul class="clearfix">
+              <li>
+                <a href="/OwlCarousel2/index.html"
+                  ><ion-icon
+                    name="cart-outline"
+                    style="font-size: 30px;"
+                  ></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- title -->
+    <section class="title">
+      <div class="row">
+        <div class="large-12 columns">
+          <h1>Kies uw product!</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="demos">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <h4>1</h4>
+            </div>
+            <div class="item">
+              <h4>2</h4>
+            </div>
+            <div class="item">
+              <h4>3</h4>
+            </div>
+            <div class="item">
+              <h4>4</h4>
+            </div>
+            <div class="item">
+              <h4>5</h4>
+            </div>
+            <div class="item">
+              <h4>6</h4>
+            </div>
+            <div class="item">
+              <h4>7</h4>
+            </div>
+            <div class="item">
+              <h4>8</h4>
+            </div>
+            <div class="item">
+              <h4>9</h4>
+            </div>
+            <div class="item">
+              <h4>10</h4>
+            </div>
+            <div class="item">
+              <h4>11</h4>
+            </div>
+            <div class="item">
+              <h4>12</h4>
+            </div>
+            <div class="item">
+              <h4>13</h4>
+            </div>
+            <div class="item">
+              <h4>14</h4>
+            </div>
+            <div class="item">
+              <h4>15</h4>
+            </div>
+            <div class="item">
+              <h4>16</h4>
+            </div>
+            <div class="item">
+              <h4>17</h4>
+            </div>
+            <div class="item">
+              <h4>18</h4>
+            </div>
+            <div class="item">
+              <h4>19</h4>
+            </div>
+            <div class="item">
+              <h4>20</h4>
+            </div>
+            <div class="item">
+              <h4>21</h4>
+            </div>
+            <div class="item">
+              <h4>22</h4>
+            </div>
+          </div>
+
+          <script>
+            $(document).ready(function() {
+              $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true
+                  },
+                  600: {
+                    items: 3,
+                    nav: false
+                  },
+                  1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false,
+                    margin: 20
+                  }
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </section>
+    <!-- vendors -->
+    <script src="../assets/vendors/highlight.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+  <footer class="header">
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="brand left">
+          <h3 style="text-align: center;">
+            © 2020 - Maple Seeds
+          </h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
